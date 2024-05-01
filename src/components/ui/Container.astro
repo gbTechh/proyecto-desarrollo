@@ -1,0 +1,10 @@
+---
+interface Props {
+	fluid?: string;
+}
+
+const { fluid } = Astro.props;
+---
+<div class={`w-full h-auto block mx-auto px-2 md:px-4 lg:px-6 ${fluid ? 'max-w-full' : 'max-w-[1600px]'}`}>
+  <slot />
+</div>
