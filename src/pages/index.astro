@@ -3,10 +3,21 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Text from '../components/ui/Text.tsx';
 import Spacer from '../components/ui/Spacer.tsx';
+
+import db from '../db.json';
+
+const { posts } = db;
+
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		
+		<div class="flex flex-wrap gap-2 justify-center">
+			{
+				posts.map(p => (
+					<Card data={{title: p.title, body: p.description, price: p.cost, source: p.image, href: `comidas/${p.id}`}}/>
+				))
+			}
+		</div>
 	</main>
 </Layout>
