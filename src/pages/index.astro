@@ -7,8 +7,8 @@ import Spacer from '../components/ui/Spacer.tsx';
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<Text as='h2' color="primary" size='xs' >titulo h1 size:xs</Text>
-		<Spacer y={1}/>
+		<Text as='h4' color="primary" size='xs' >titulo h1 size:xs</Text>
+		<Spacer y={2}/>
 		<Text as='h2' color="primary" size='14' >titulo h1 size:14</Text>
 		<Spacer y={2}/>
 		<Text as='h2' color="contrast" size='sm' >titulo h1 size:sm</Text>
@@ -21,10 +21,11 @@ import Spacer from '../components/ui/Spacer.tsx';
 		<Text as='h1' className="font-bold">titulo con fuente negrita (font-bold)</Text>
 		<Text as='h1' className="uppercase">Titulo en mayusculas (uppercase)</Text>
 		
-		<div class="flex">
+		<div class="flex flex-col bg-footer  rounded-lg py-10">
 			<Text as='h1' type='title'>Type: title</Text><Spacer x={4}/><Text as='h1' type="base">Type: base</Text>
 
 		</div>
+	
 		
 		<div class="flex">
 			<Text as='h1' type='title'>Type: title</Text><Spacer x={8}/><Text as='h1' type="base">Type: base</Text>
