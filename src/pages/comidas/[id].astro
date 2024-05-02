@@ -1,0 +1,29 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../layouts/Layout.astro";
+
+import db from '../../db.json';
+
+const { id } =  Astro.params
+
+//creo una variable food para
+let food;
+//a esa variable food le asigno un valor que sera la comida que tenga el id cuyo id viene de Astro.params
+
+food = db.posts.find(e => Number(e.id) === Number(id)) //aqui hago una busqueda para encontrar dentro de la base de datos db.json a la comida que tenga el id que viene  en los parametros (Astro.params de arriba)
+
+export function getStaticPaths(){
+  //aqui puedes obtener la data, ya sea que hagas un fetchi nde datos (llamar a una api y obtener datos) o leer desde el archivo db.json
+  //retornas un array con todos los valores:
+  const { posts } = db; //obtengo los post del objeto db que importe arriba
+  //ahora retorno los id de todos los post
+  return posts.map(p => ({
+    params: {id: p.id}
+  }))
+
+}
+---
+
+<Layout title="titulo">
+  <Card data={{title: food.title, price: food.cost, body: food.description, source: food.image}}></Card>
+</Layout>
