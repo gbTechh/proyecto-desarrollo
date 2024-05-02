@@ -1,22 +1,31 @@
 ---
 interface Props {
-	title: string;
-	body: string;
-	href: string;
+	data: {
+		href:string,
+		title:string,
+		body:string,
+		price:string,
+		source:string,
+	}
 }
 
+import Text from '../components/ui/Text.tsx';
+import Container from './ui/Container.astro';
 
-const { href, title, body } = Astro.props;
+const { data:{href, title, body, price, source} } = Astro.props;
 ---
 
-<li class="link-card">
+<div class="rounded bg-grey shadow-xl p-2 w-60">
 	<a href={href}>
-		<h2>
+		<img src={source} class="object-contain w-full h-32">
+		<Text as='h1' color='primary' size='md'>
 			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
+		</Text>
+		<Text as="p" color='contrast'size='sm'>
 			{body}
-		</p>
+		</Text>
+		<Text as='p' color='warning' size='xs'>
+			{price}
+		</Text>
 	</a>
-</li>
+</div>
