@@ -14,7 +14,7 @@ const { foods, categories } = db;
 	<main>
 		<div class="rounded-2xl relative  overflow-hidden max-h-[150px] sm:max-h-[100px]">
 			<div class="absolute top-0 left-0 w-full h-full bg-slate-800 bg-opacity-70"></div>
-			<img class="w-full h-full object-cover" src="../../public/food.jpg" />
+			<img class="w-full h-full object-cover" src="/food.jpg" />
 			<div class="absolute flex  left-0 top-0 w-full h-full p-6 justify-between sm:items-center">
 				<div class="pr-2">
 					<Text size='xl' color='custom' className='text-white font-semibold'>Bell Fresh</Text>
@@ -40,7 +40,7 @@ const { foods, categories } = db;
 					categories.map(e => (
 						<li class="w-full flex items-center justify-center flex-col gap-4 bg-primary bg-opacity-10 border-[1px] border-warning rounded-3xl p-3">
 						<img src={e.image} class="aspect-square w-14 shadow-2xl rounded-full object-cover" />
-						<a href={`categorias/${e.slug}`} class="w-full">
+						<a href={`/categorias/${e.slug}`} class="w-full">
 						<Text as='span' size='xs' className='font-semibold block text-center w-full' >{e.name}</Text>
 						</a>
 						</li>
