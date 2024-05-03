@@ -1,205 +1,337 @@
 {
-  "posts": [
+  "foods": [
     {
       "id": 1,
       "title": "Provo Burger",
       "cost": "S/399.90",
       "description": "Con los ingredientes Carne Vacuna, provolone, panceta y rúcula.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/ham%20Provo.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/ham%20Provo.jpg",
+      "ingredients": [
+        "3 tomates",
+        "ensalada",
+        "150gr de carne vacuna",
+        "pan ceabatta"
+      ],
+      "persons": 4,
+      "category": 1,
+      "calories": 120,
+      "stars": 4.5,
+      "best_seller": true
     },
     {
       "id": 2,
       "title": "Veggie",
       "cost": "S/3700.00",
       "description": "Berenjenas, morrón, cebolla y hojas verdes.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/Ham%20Vegge.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/Ham%20Vegge.jpg",
+      "ingredients": ["Berenjenas", "morrón", "cebolla", "hojas verdes"],
+      "persons": 4,
+      "category": 3,
+      "calories": 120,
+      "stars": 4.5,
+      "best_seller": true
     },
     {
       "id": 3,
       "title": "Cheddar",
       "cost": "S/3300.00",
       "description": "1 carne, panceta, cheddar y cebolla.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/Ham%20cheddar.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/Ham%20cheddar.jpg",
+      "ingredients": ["1 carne", "panceta", "cheddar", "cebolla"],
+      "persons": 4,
+      "category": 2,
+      "calories": 120,
+      "stars": 4.5,
+      "best_seller": true
     },
     {
       "id": 4,
       "title": "Pepin",
       "cost": "S/3000.00",
       "description": "1 carne, pepino, lechuga, cebolla y queso.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/pepin.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/pepin.jpg",
+      "ingredients": ["1 carne", "pepino", "lechuga", "cebolla", "queso"],
+      "persons": 4,
+      "category": 3,
+      "calories": 120,
+      "stars": 4.5,
+      "best_seller": true
     },
     {
       "id": 5,
       "title": "Big Club",
       "cost": "S/3400.00",
       "description": "Doble carne, doble cheddar, huevo a la plancha, aros de cebollas, bastón de muzzarella en pan artesanal.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/big%20club-compressed.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/big%20club-compressed.jpg",
+      "ingredients": [
+        "Doble carne",
+        "doble cheddar",
+        "huevo a la plancha",
+        "aros de cebollas",
+        "bastón de muzzarella en pan artesanal"
+      ],
+      "persons": 4,
+      "category": 4,
+      "calories": 120,
+      "stars": 4.5,
+      "best_seller": false
     },
     {
       "id": 6,
       "title": "Jamón y Queso",
       "cost": "S/4000.00",
       "description": "1 carne, jamón y queso.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/jyq.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/jyq.jpg",
+      "ingredients": ["1 carne", "jamón", "queso"],
+      "persons": 4,
+      "category": 5,
+      "calories": 120,
+      "stars": 4.5,
+      "best_seller": false
     },
-
     {
       "id": 7,
       "title": "Capresse",
       "cost": "S/4100.00",
       "description": "Tomate y albahaca.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/Pizza%20Napo.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/Pizza%20Napo.jpg",
+      "ingredients": ["Tomate", "albahaca"],
+      "persons": 4,
+      "category": 6,
+      "calories": 120,
+      "stars": 4.5,
+      "best_seller": false
     },
     {
       "id": 8,
       "title": "Hop Supply",
       "cost": "S/4800.00",
       "description": "Queso, jamón, panceta y huevo frito.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/pizza%20mooz.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/pizza%20mooz.jpg",
+      "ingredients": ["Queso", "jamón", "panceta", "huevo frito"],
+      "persons": 4,
+      "category": 7,
+      "calories": 120,
+      "stars": 4.5,
+      "best_seller": false
     },
     {
       "id": 9,
       "title": "Fugazzeta",
       "cost": "S/4400.00",
       "description": "Fugazzeta.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/Pizza%20Fuga.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/Pizza%20Fuga.jpg",
+      "ingredients": ["Fugazzeta"],
+      "persons": 4,
+      "category": 7,
+      "calories": 120,
+      "stars": 4.5,
+      "best_seller": false
     },
     {
       "id": 10,
       "title": "Panceta y Morrón",
       "cost": "S/4900.00",
       "description": "Panceta, morrón y aceitunas negras.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/Pizza%20Jamon%20y%20Morron.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/Pizza%20Jamon%20y%20Morron.jpg",
+      "ingredients": ["Panceta", "morrón", "aceitunas negras"],
+      "persons": 4,
+      "category": 1,
+      "calories": 120,
+      "stars": 4.5,
+      "best_seller": false
     },
     {
       "id": 11,
       "title": "Jamón Crudo y Rúcula",
       "cost": "S/4500.00",
       "description": "Jamón Crudo y Rúcula.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/Pizza%20Crudo%20y%20rucula.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/Pizza%20Crudo%20y%20rucula.jpg",
+      "ingredients": ["Jamón Crudo", "Rúcula"],
+      "persons": 2,
+      "category": 2,
+      "calories": 220,
+      "stars": 4.8,
+      "best_seller": false
     },
     {
       "id": 12,
       "title": "Muzarella",
       "cost": "S/4380.00",
       "description": "Pizzeta de 32 cm con salsa de la casa y muzzarella.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/pizza%20muzza.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/pizza%20muzza.jpg",
+      "ingredients": ["Muzzarella", "Salsa de la casa"],
+      "persons": 2,
+      "category": 3,
+      "calories": 180,
+      "stars": 4.6,
+      "best_seller": false
     },
-
     {
       "id": 13,
       "title": "Sándwich de Milanesa",
       "cost": "S/2400.00",
-      "description": "Inlcuye guarnición de papas.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/sand%20mila.jpg"
+      "description": "Incluye guarnición de papas.",
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/sand%20mila.jpg",
+      "ingredients": ["Milanesa", "Pan", "Lechuga", "Tomate", "Mayonesa"],
+      "persons": 1,
+      "category": 4,
+      "calories": 450,
+      "stars": 4.2,
+      "best_seller": false
     },
     {
       "id": 14,
       "title": "Lomo Hop Supply",
       "cost": "S/2800.00",
       "description": "Lechuga, tomate, provolone y huevo. Incluye guarnición de papas.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/Lomo%20mooz.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/Lomo%20mooz.jpg",
+      "ingredients": ["Lomo", "Lechuga", "Tomate", "Provolone", "Huevo"],
+      "persons": 1,
+      "category": 5,
+      "calories": 520,
+      "stars": 4.7,
+      "best_seller": false
     },
     {
       "id": 15,
       "title": "Sándwich de Milanesa Hop Suppy",
       "cost": "S/2800.00",
       "description": "Incluye guarnición de papas.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/sand%20mooz.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/sand%20mooz.jpg",
+      "ingredients": ["Milanesa", "Pan", "Lechuga", "Tomate", "Huevo"],
+      "persons": 1,
+      "category": 6,
+      "calories": 480,
+      "stars": 4.3,
+      "best_seller": false
     },
     {
       "id": 16,
       "title": "Mejillones",
       "cost": "S/1300.00",
       "description": "Mejillones frescos con salsa asiática.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/mejillones.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/mejillones.jpg",
+      "ingredients": [
+        "Mejillones",
+        "Salsa asiática",
+        "Cebollín",
+        "Pimiento rojo"
+      ],
+      "persons": 2,
+      "category": 7,
+      "calories": 180,
+      "stars": 4.5,
+      "best_seller": false
     },
     {
       "id": 17,
       "title": "Miniaturas",
       "cost": "S/1280.00",
       "description": "Miniaturas de pescado con mayonesa de zanahoria.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/miniaturas.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/miniaturas.jpg",
+      "ingredients": ["Miniaturas de pescado", "Mayonesa de zanahoria"],
+      "persons": 2,
+      "category": 1,
+      "calories": 240,
+      "stars": 4.4,
+      "best_seller": false
     },
     {
       "id": 18,
       "title": "Rabas",
       "cost": "S/2000.00",
       "description": "Rabas de calamar con dip.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/rabas51104b.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/rabas51104b.jpg",
+      "ingredients": ["Rabas de calamar", "Dip"],
+      "persons": 2,
+      "category":3,
+      "calories": 280,
+      "stars": 4.6,
+      "best_seller": false
     },
     {
       "id": 19,
       "title": "Mollejas",
       "cost": "S/1230.00",
       "description": "Mollejas crocantes con cremoso de papas, ajo asado y pesto cítrico.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/mollejas%20333.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/mollejas%20333.jpg",
+      "ingredients": [
+        "Mollejas",
+        "Papas cremosas",
+        "Ajo asado",
+        "Pesto cítrico"
+      ],
+      "persons": 2,
+      "category": 3,
+      "calories": 350,
+      "stars": 4.8,
+      "best_seller": false
     },
-
     {
       "id": 20,
       "title": "Entraña Feedlot",
       "cost": "S/1350.00",
       "description": "Con papas perfumadas en crema de echalote, ajo, albahaca, frutos secos y salsa de pimientos de piquillo.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/entra%C3%B1a.jpg"
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/entra%C3%B1a.jpg",
+      "ingredients": [
+        "Entraña",
+        "Papas",
+        "Crema de echalote",
+        "Ajo",
+        "Albahaca",
+        "Frutos secos",
+        "Salsa de pimientos de piquillo"
+      ],
+      "persons": 2,
+      "category": 2,
+      "calories": 420,
+      "stars": 4.7,
+      "best_seller": false
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Hamburguesas",
+      "slug": "hamburguesas",
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/big%20club-compressed.jpg"
     },
     {
-      "id": 21,
-      "title": "Entrecot en salsa Tannat",
-      "cost": "S/1450.00",
-      "description": "Entrecot en salsa Tannat.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/entrecot.jpg"
+      "id": 2,
+      "name": "Pizzas",
+      "slug": "pizzas",
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/big%20club-compressed.jpg"
     },
     {
-      "id": 22,
-      "title": "Milanesa Americana",
-      "cost": "S/1200.00",
-      "description": "Cheddar, panceta crocante, huevo frito. Acompañamiento a elección.",
-      "image": "https://demo.faugetdigital.shop/imagenes_productos/milanesa%20americana-compressed.jpg"
+      "id": 3,
+      "name": "Sándwiches",
+      "slug": "sandwiches",
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/big%20club-compressed.jpg"
     },
     {
-      "id": 23,
-      "title": "Milanesa 3 Quesos",
-      "cost": "S/1200.00",
-      "description": "Provolone, parmesano, roquefort. Acompañamiento a elección.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/mila%203%20quesos.jpg"
-    },
-
-    {
-      "id": 24,
-      "title": "Ravioles",
-      "cost": "S/1170.00",
-      "description": "Relleno de jamón y queso.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/ravioles.jpg"
+      "id": 4,
+      "name": "Entradas",
+      "slug": "entradas",
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/big%20club-compressed.jpg"
     },
     {
-      "id": 25,
-      "title": "Ñoquis",
-      "cost": "S/1550.00",
-      "description": "Ñoquis.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/%C3%B1oquis.jpeg"
+      "id": 5,
+      "name": "Platos principales",
+      "slug": "platos-principales",
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/big%20club-compressed.jpg"
     },
     {
-      "id": 26,
-      "title": "Sorrentinos",
-      "cost": "S/9000.00",
-      "description": "Relleno de calabaza.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/sorrentinos.jpg"
-    },
-
-    {
-      "id": 27,
-      "title": "Coca Cola 350ml",
-      "cost": "S/1500.00",
-      "description": "Sabores: Cola cola - Sprite - RC Cola - Pepsi-Cola - Mirinda.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/rosalia_Mesa-de-trabajo-1.png"
+      "id": 6,
+      "name": "Pastas",
+      "slug": "pastas",
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/big%20club-compressed.jpg"
     },
     {
-      "id": 28,
-      "title": "Coca Cola",
-      "cost": "S/2000.00",
-      "description": "Sabores: Cola cola - Sprite - RC Cola - Pepsi-Cola - Mirinda.",
-      "image": "https://resto.faugetdigital.shop/imagenes_productos/images%20(7).jpeg"
+      "id": 7,
+      "name": "Bebidas",
+      "slug": "bebidas",
+      "image": "https://resto.faugetdigital.shop/imagenes_productos/big%20club-compressed.jpg"
     }
   ]
 }

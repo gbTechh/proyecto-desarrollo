@@ -6,18 +6,32 @@ import Spacer from '../components/ui/Spacer.tsx';
 
 import db from '../db.json';
 
-const { posts } = db;
-
+const { foods } = db;
+const bestSeller = foods.filter(e => e.best_seller)
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<div class="flex flex-wrap gap-2 justify-center">
+	<header>
+		<div class="mt-4 mx-auto max-w-[650px]">
+			<Text as='h1' color='primary' type='title' className='w-full text-center font-bold  text-4xl md:text-5xl  lg:text-6xl' size='custom' >Despierta temprano! Come fresco y saludable</Text>
+			<Spacer y={6} />
+			<Text color='contrast' className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt vero ipsum autem error ex vitae, odit voluptate placeat eveniet fugiat explicabo sit delectus at quo? Deserunt cum eum labore quasi?</Text>
+		</div>
+	</header>
+	<Spacer y={18}/>
+	<main class="flex justify-center flex-col">
+		<Text type='title' color='contrast' size='custom' className='w-full text-center text-2xl'>Nuestros mejores productos para ti.</Text>	
+		<Spacer y={12}/>
+		<a href="/productos" class="font-biryani bg-primary text-white font-semibold p-3 text-sm rounded-xl self-center w-auto">Conoce nuestra carta</a>
+		<Spacer y={12}/>
+		<section class="flex flex-wrap gap-8 justify-center items-center">
 			{
-				posts.map(p => (
-					<Card data={{title: p.title, body: p.description, price: p.cost, source: p.image, href: `comidas/${p.id}`}}/>
+				bestSeller.map(p => (
+					<Card data={{...p, href: '#'}}/>
 				))
 			}
-		</div>
+		</section>
 	</main>
 </Layout>
+
+

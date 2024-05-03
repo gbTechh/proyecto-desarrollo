@@ -4,27 +4,33 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				
+				whitebg: "#F7F7F7",
 			},
 			borderColor: {
-				primary: "#242323",
+				primary: "#EFEFEF",
 				buttoncontrast: "#4C2774",
 				input: "#242323",
+				warning: "#FFC300"
 			},
 			backgroundColor: {
-				primary: "#1D1C21",
+				primary: "#FFC300",
 				buttonprimary: "#111010",
 				buttonprimaryhover: "#070707",
 				contrast: "#C0C0C0",
 				footer: "#F34949",
+				customblack: "#0A0A09",
+				whitecontrast: "#F3F3F3",
+				whitebg: "#F7F7F7",
 			},
 			textColor: {
+				white1: "#FAFAFA",
 				primary: "#2B2B2B",
-				contrast: "#C0C0C0",
+				contrast: "#5C5C5C",
+				warning: "#FFC300",
 			},
 			fontFamily: {
-				nunito: ["Nunito", "sans-serif"],
-				raleway: ["Raleway", "sans-serif"],
+				dmserif: ["DM Serif Text", "serif"],
+				biryani: ["Biryani", "sans-serif"],
 			},
 		},
 	},

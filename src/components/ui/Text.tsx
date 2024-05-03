@@ -29,8 +29,8 @@ const Text: React.FC<Props> = ({
   const clases = clsx(
     className,
     {
-      "font-nunito": type === "title",
-      "font-raleway": type === "base",
+      "font-dmserif": type === "title",
+      "font-biryani": type === "base",
       "": type === "custom",
     },
     {
@@ -38,7 +38,7 @@ const Text: React.FC<Props> = ({
       "text-contrast": color === "contrast",
       "text-red-500": color === "error",
       "text-green-400": color === "success",
-      "text-yellow-400": color === "warning",
+      "text-warning": color === "warning",
       "": color === "custom",
     },
     {
