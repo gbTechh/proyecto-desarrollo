@@ -3,47 +3,21 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Text from '../components/ui/Text.tsx';
 import Spacer from '../components/ui/Spacer.tsx';
+
+import db from '../db.json';
+
+const { posts } = db;
+
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<Text as='h2' color="primary" size='xs' >titulo h1 size:xs</Text>
-		<Spacer y={1}/>
-		<Text as='h2' color="primary" size='14' >titulo h1 size:14</Text>
-		<Spacer y={2}/>
-		<Text as='h2' color="contrast" size='sm' >titulo h1 size:sm</Text>
-		<Spacer y={3}/>
-		<Text as='h2' color="error" size='lg' >titulo h1 size:lg</Text>
-		<Spacer y={4}/>
-		<Text as='h2' color="success" size='xl' >titulo h1: size:xl</Text>
-		<Text as='h2' color="warning" size='xl' >titulo h1:size:xl</Text>
-		<Spacer y={1}/>
-		<Text as='h1' className="font-bold">titulo con fuente negrita (font-bold)</Text>
-		<Text as='h1' className="uppercase">Titulo en mayusculas (uppercase)</Text>
-		
-		<div class="flex">
-			<Text as='h1' type='title'>Type: title</Text><Spacer x={4}/><Text as='h1' type="base">Type: base</Text>
-
+		<div class="flex flex-wrap gap-2 justify-center">
+			{
+				posts.map(p => (
+					<Card data={{title: p.title, body: p.description, price: p.cost, source: p.image, href: `comidas/${p.id}`}}/>
+				))
+			}
 		</div>
-		
-		<div class="flex">
-			<Text as='h1' type='title'>Type: title</Text><Spacer x={8}/><Text as='h1' type="base">Type: base</Text>
-
-		</div>
-		<div class="flex">
-			<Text as='h1' type='title'>Type: title</Text><Spacer x={12}/><Text as='h1' type="base">Type: base</Text>
-
-		</div>
-
-
-		<div class="flex flex-col bg-yellow-300 sm:bg-blue-300">
-			<p class="text-black">texto 1</p>
-			<p class="text-black">texto 1</p>
-			<p class="text-black">texto 1</p>
-			<p class="text-black">texto 1</p>
-			<p class="text-black">texto 1</p>
-
-		</div>
-		
 	</main>
 </Layout>

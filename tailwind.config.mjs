@@ -16,6 +16,7 @@ export default {
 				buttonprimary: "#111010",
 				buttonprimaryhover: "#070707",
 				contrast: "#C0C0C0",
+				footer: "#F34949",
 			},
 			textColor: {
 				primary: "#2B2B2B",
