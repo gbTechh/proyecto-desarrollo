@@ -27,7 +27,7 @@ const bestSeller = foods.filter(e => e.best_seller)
 		<section class="flex flex-wrap gap-8 justify-center items-center">
 			{
 				bestSeller.map(p => (
-					<Card data={{...p, href: '#'}}/>
+					<Card data={{...p, href: '/comidas/'+id}}/>
 				))
 			}
 		</section>
