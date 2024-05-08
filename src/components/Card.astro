@@ -21,9 +21,9 @@ import Spacer from './ui/Spacer.tsx';
 const { data:{href, id, title, ingredients, cost, image, stars, persons, calories, best_seller} } = Astro.props;
 ---
 <div class="relative pt-[4rem] grid place-items-center ">
-	<img src={image} class="rounded-full w-[80%] aspect-square max-w-[120px] object-cover shadow-[rgba(0,_0,_0,_0.2)_0px_20px_30px_-7px] absolute top-0 mx-auto border-[1px] border-gray-100 ">
-	<div class="group hover:bg-primary transition-colors w-full pt-16 rounded-2xl bg-whitebg shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col justify-between items-center p-6  h-72 content-stretch ">		
-	
+	<img src={image} class="z-20  rounded-full w-[80%] aspect-square max-w-[120px] object-cover shadow-[rgba(0,_0,_0,_0.2)_0px_20px_30px_-7px] absolute top-0 mx-auto border-[1px] border-gray-100 ">
+	<div class="group hover:bg-primary transition-colors w-full pt-16 rounded-2xl bg-whitebg shadow-[0_8px_30px_rgb(0,0,0,0.12)] relative flex flex-col justify-between items-center p-6  z-10 h-72 content-stretch overflow-hidden">		
+		<span class="absolute -top-2 -left-2 h-8 w-8 bg-red-600 rounded-xl"></span>
 		<a href={href} class="mt-4">
 			<Text as='h2' type='base' color='primary' size='md' className='group-hover:text-white font-semibold hover:underline text-center transition-all cursor-pointer'>
 				{title}
