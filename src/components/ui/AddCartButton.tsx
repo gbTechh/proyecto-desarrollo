@@ -8,7 +8,7 @@ interface Props {
     href: string;
     title: string;
     ingredients: string[];
-    cost: string;
+    cost: number;
     image: string;   
   };
 }
@@ -25,7 +25,7 @@ export default function AddCartButton({ data }: Props) {
   return (
     <button
       onClick={addToCart}
-      className="text-white font-bold bg-primary h-8 w-8 rounded-md"
+      className="group-hover:bg-white group-hover:text-yellow-400 text-white font-bold bg-primary h-8 w-8 rounded-md"
     >
       +
     </button>

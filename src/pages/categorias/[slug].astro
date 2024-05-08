@@ -8,7 +8,7 @@ import Spacer from "../../components/ui/Spacer";
 
 const { slug } =  Astro.params
 
-const { categories } = db;
+const { categories, foods } = db;
 //creo una variable food para
 let foodsArr;
 //a esa variable food le asigno un valor que sera la comida que tenga el id cuyo id viene de Astro.params
@@ -41,12 +41,12 @@ export function getStaticPaths(){
 				</div>
 				<div class="flex flex-col sm:flex-row gap-1 sm:gap-4">
 					<div class="flex flex-col justify-center items-center">
-						<Text color='warning' className='text-2xl font-bold' size='custom'>24</Text>
+						<Text color='warning' className='text-2xl font-bold' size='custom'>{foods.length}</Text>
 						<Text color='custom' className='text-gray-300 font-bold' size='xs'>Total de comidas</Text>
 					</div>
 					<div class="hidden sm:block w-[1px] h-auto bg-gray-500 rounded-full"></div>
 					<div class="flex flex-col justify-center items-center">
-						<Text color='warning' className='text-2xl font-bold' size='custom'>03</Text>
+						<Text color='warning' className='text-2xl font-bold' size='custom'>{categories.length}</Text>
 						<Text color='custom' className='text-gray-300 font-bold' size='xs'>Categorías</Text>
 					</div>					
 				</div>
@@ -55,6 +55,12 @@ export function getStaticPaths(){
 		<Spacer y={6}/>
 		<div class="w-full">
 			<ul class="flex gap-4 ">
+				<li class="w-full min-w-[120px] flex items-center justify-center flex-col gap-4 bg-primary bg-opacity-10 border-[1px] border-warning rounded-3xl p-3">
+					<img src='/allfoods.png' class="aspect-square w-14 shadow-2xl rounded-full object-cover" />
+					<a href={`/productos`} class="w-full">
+					<Text as='span' size='xs' className='font-semibold block text-center w-full' >Todos</Text>
+					</a>
+				</li>
 				{
 					categories.map(e => (
 						<li class="w-full flex items-center justify-center flex-col gap-4 bg-primary bg-opacity-10 border-[1px] border-warning rounded-3xl p-3">
@@ -74,6 +80,9 @@ export function getStaticPaths(){
 				foodsArr.map(p => (
 					<Card data={{href: `/comidas/${p.id}`, ...p}}/>
 				))
+			}
+			{
+				!foodsArr.length && (<>{`No tenemos ${slug} por ahora`}</>) 
 			}
 		</div>
 	</main>
